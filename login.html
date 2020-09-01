@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = 'stylesheet' type="text/css" href='static/css/login.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='https://bootswatch.com/4/slate/bootstrap.min.css'>
+    <script src="static/js/login.js"></script>
+    <title>Stream Videos on Demand</title>
+</head>
+<body>
+        <nav class='navbar navbar-default'>
+            <a class="navbar-brand" href="#">Hello, User!!</a>
+        </nav>
+        <br/>
+        <div class="container" id="firstContainer">
+        <form action="/login" method="POST" class="jumbotron" onsubmit="return formSubmit(this)" >
+              <legend class="text-center h1">ENTER CREDENTIALS</legend>
+              <div class="form-group">
+                <label for="exampleInputPassword1" id="incorrect" class="incorrect"></label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="YOUR CREDENTIALS" required>
+              </br>
+                <span id="invalidPassword"></span>
+                <div class="invalid-feedback" id="invalid" ></div>
+              </div>
+              <button type="submit" id="submit-button" action='/' class="btn btn-primary center">Submit</button>
+   </form>
+</div>
+</body>
+</html>

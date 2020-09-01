@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <link rel = 'stylesheet' type="text/css" href='static/css/player.css'>
+    <link rel='stylesheet' href='https://bootswatch.com/4/slate/bootstrap.min.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Page</title>
+</head>
+<body onload="return loader()">
+    <nav class='navbar navbar-default'>
+        <div class='container'>
+            <div class='navbar-header'>
+				<a class ='navbar-brand' href="/index">HOME</a>
+				<a class ='navbar-brand' href="/index">SUBSCRIPTIONS</a>
+				<a class ='navbar-brand' href="/search">SEARCH MOVIES</a>
+				<a class ='navbar-brand' href="/index">MOVIE TRIVIA</a>
+				<a class ='navbar-brand' href="/about">ABOUT US</a>
+            </div> 
+            <a class="btn btn-primary" method="POST" action="/logout" >SIGN OUT</a>
+		</div>
+    </nav>
+    </br>
+
+    <div class="jumbotron">
+        <h1 class="text-center" id="heading"></h1>
+        <br/>
+        <video height="75%" width="100%" id="video-player"  controls >
+        <!-- <source src="/video" type="video/mp4" > -->
+        </video>
+<script language="javascript" type="text/javascript" src="/static/pages/player.js"></script>
+
+</body>
+</html> 
+
+
+
+
+    <!-- <div class="jumbotron">
+        <h1 class="display-3">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+      </div> -->

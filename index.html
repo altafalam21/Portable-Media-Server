@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream videos on demand</title>
+    <link rel='stylesheet' href='https://bootswatch.com/4/slate/bootstrap.min.css'>
+    <link rel = 'stylesheet' type="text/css" href='static/css/style.css' >
+    <script src="static/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+<body onload="return loader()">
+    <nav class='navbar navbar-default'>
+        <div class='container'>
+            <div class='navbar-header'>
+				<a class ='navbar-brand' href="/index">HOME</a>
+				<a class ='navbar-brand' href="/index">SUBSCRIPTIONS</a>
+				<a class ='navbar-brand' href="/search">SEARCH MOVIES</a>
+				<a class ='navbar-brand' href="/index">MOVIE TRIVIA</a>
+				<a class ='navbar-brand' href="/about">ABOUT US</a>
+            </div> 
+			<a href="/logout" method="POST" class="btn btn-primary" >SIGN OUT</a>
+		</div>
+    </nav>
+	<br/>
+		<h2 class="text-center">Watch Videos on demand</h2>
+    	<br/>
+    <div class="container">
+		<div id="movies" class="row"></div>
+    </div>
+        
+
+    <div class="container">
+        <p>All rights reserved</p>
+    </div>
+    
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- <html>
+<head> 
+	<title>Video streaming with Node.js</title> 
+</head> 
+<body> 
+
+	<h1>Welcome to the Media Server</h1>
+	<video id="videoPlayer" controls muted="muted" autoplay>  
+<source src="http://localhost:3000/video" type="video/mp4">
+</video> 
+</body> 
+</html>
+ -->
